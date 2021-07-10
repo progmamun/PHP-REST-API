@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PHP & Ajax CRUD</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <table id="main" border="0" cellspacing="0">
+    <tr>
+      <td id="header">
+        <h1>PHP REST API CRUD</h1>
+
+        <div id="search-bar">
+          <label>Search :</label>
+          <input type="text" id="search" autocomplete="off">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td id="table-form">
+        <form id="addForm">
+          Name : <input type="text" name="sname" id="sname">
+          Age : <input type="number" name="sage" id="sage">
+          City : <input type="text" name="scity" id="scity">
+          <input type="submit" id="save-button" value="Save">
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td id="table-data">
+        <table width="100%" cellpadding="10px" >
+          <tr>
+            <th width="40px">Id</th>
+            <th>Name</th>
+            <th width="50px">Age</th>
+            <th width="150px">City</th>
+            <th width="60px">Edit</th>
+            <th width="70px">Delete</th>
+          </tr>
+          <tbody id="load-table">
+            <tr>
+              <td class="center">1</td>
+              <td>Name 1</td>
+              <td>25</td>
+              <td>Delhi</td>
+              <td class="center"><button class="edit-btn" data-eid="">Edit</button></td>
+              <td class="center"><button class="delete-btn" data-id="">Delete</button></td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Name 2</td>
+              <td>23</td>
+              <td>Agra</td>
+              <td class="center"><button class="edit-btn" data-eid="">Edit</button></td>
+              <td class="center"><button class="delete-btn" data-id="">Delete</button></td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Name 3</td>
+              <td>27</td>
+              <td>Goa</td>
+              <td class="center"><button class="edit-btn" data-eid="">Edit</button></td>
+              <td class="center"><button class="delete-btn" data-id="">Delete</button></td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Name 4</td>
+              <td>25</td>
+              <td>Delhi</td>
+              <td class="center"><button class="edit-btn" data-eid="">Edit</button></td>
+              <td class="center"><button class="delete-btn" data-id="">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <div id="error-message" class="messages"></div>
+  <div id="success-message" class="messages"></div>
+
+  <!-- Popup Modal Box for Update the Records -->
+  <div id="modal">
+    <div id="modal-form">
+      <h2>Edit Form</h2>
+      <form action="" id="edit-form">
+      <table cellpadding="10px" width="100%">
+        <tr>
+          <td width="90px">First Name</td>
+          <td><input type="text" name="sname" id="edit-name">
+              <input type="text" name="sid" id="edit-id" hidden="">
+          </td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><input type="number" name="sage" id="edit-age"></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><input type="text" name="scity" id="edit-city"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="button" id="edit-submit" value="Update"></td>
+        </tr>
+      </table>
+      </form>
+      <div id="close-btn">X</div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+  //Fetch All Records
+
+  //Insert New Record
+
+  //Delete Record
+
+  //Fetch Single Record : Show in Modal Box
+
+  //Hide Modal Box
+
+  //Update Record
+
+  //Live Search Record
+</script>
+</body>
+</html>
