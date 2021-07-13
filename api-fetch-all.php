@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-header('Acess-Control-Allow-Origin: *');
+header('Access-Control-Allow-Origin: *');
 
 include "config.php";
 
