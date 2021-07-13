@@ -6,6 +6,10 @@ $data = json_decode(file_get_contents("php://input"), true);
 
 $search_value = $data['search'];
 
+// get method
+//$search_value = isset($_GET['search']) ? $_GET['search'] : die();
+// postman GET url = http://localhost/REST-API/api-search.php?search=khan
+
 include "config.php";
 
 $sql = "SELECT * FROM test WHERE student_name LIKE '%{$search_value}%'";
